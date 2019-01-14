@@ -2,11 +2,44 @@
 <html>
 <head>
 <style> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
    h3 {
   color: green;
   text-align: center;
  font-size: 100px;
 } 
+    
+    
+    @keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+    
+    
 h1 {
   color: red;
   text-align: center;
@@ -14,9 +47,7 @@ h1 {
         h2 {
   font-size: 30px;
 }
- body {
-  background-color: lightblue;
-}
+
        <h3> 
 p.solid {border-style: solid;}
     
@@ -36,7 +67,7 @@ div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 180px;
+  width: 50px;
 }
 
 div.gallery:hover {
@@ -44,8 +75,8 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 100%;
-  height: auto;
+  width: 25%;
+  height: 25%;
 }
 
 div.desc {
@@ -56,7 +87,58 @@ div.desc {
 </head>
 <body>
 <hr>
+    
 
+</style>
+</head>
+<body>
+
+<h2>Tabs</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">Gnome1</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Gnome2</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Gnome3</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>Gnome1</h3>
+  <p></break><img src=gnomed3.jpeg width="600px"<break>
+       THis gnome is hard</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>You Gnome I Had To Do It To Em</h3>
+  <p></break><img src=gnomed6.jpeg width="600px"<break>
+       THis gnome is hard</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Gnome3</h3>
+  <p><img src=gnomed5.jpg width="600px"</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
+
+    
 <center><p class="solid"><img src=gnome.jpg width="600px" alt="gnome"><center> <center>A Rare German Garden Gnome</center><break> </p>
     
 <center><img src=gnomed2.jpg width="500px" alt="gnome"><center> 
@@ -93,7 +175,8 @@ div.desc {
          
          <break> </p>
      
-     
+
+
 <body>
 <html>
 
