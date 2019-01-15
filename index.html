@@ -1,12 +1,19 @@
 
 <html>
 <head>
-<style> 
+<style>
+text-align: center;
+cursor: pointer;
+text-decoration: none;
 <meta name="viewport" content="width=device-width, initial-scale=1">
+body {
+  font-family: "Lato", sans-serif;
+}
    h3 {
-  color: green;
-  text-align: center;
- font-size: 100px;
+  color: blueviolet;
+ font-size: 30px;
+ font-family: "Arial", Times, serif;
+
 } 
     
     
@@ -39,23 +46,23 @@ body {
     animation-direction: alternate;
 }
     
-    
+
 h1 {
   color: red;
   text-align: center;
+font-family: "Arial", Times, serif;
 }
         h2 {
-  font-size: 30px;
+  font-size: 20px;
+  font-family: "Arial", Times, serif;
 }
 
-       <h3> 
-p.solid {border-style: solid;}
+
     
-  
 
 p {
   border: 1px solid black;
-  outline: #4CAF50 solid 2px;
+  outline: Black solid 2px;
   margin: auto;  
   padding: 5px;
   text-align: center;
@@ -83,19 +90,14 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
+<hr>
 </style>
 </head>
 <body>
 <hr>
-    
-
-</style>
-</head>
-<body>
-
-<h2>Tabs</h2>
-<p>Click on the buttons inside the tabbed menu:</p>
-
+<h3>Types Of Gnomes</h3>
+    <span style="font-size:30px;cursor:pointer;position:absolute; absolute;top: 75"
+          
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'London')">Gnome1</button>
   <button class="tablinks" onclick="openCity(event, 'Paris')">Gnome2</button>
@@ -103,19 +105,19 @@ div.desc {
 </div>
 
 <div id="London" class="tabcontent">
-  <h3>Gnome1</h3>
-  <p></break><img src=gnomed3.jpeg width="600px"<break>
-       THis gnome is hard</p>
+  <h2><center>Thanos Gnome</center></h3>
+  <p></break><img src=GNomed7.jpg width="600px"<break>
+       </p>
 </div>
 
 <div id="Paris" class="tabcontent">
-  <h3>You Gnome I Had To Do It To Em</h3>
+  <h2><center>You Gnome I Had To Do It To Em</center></h3>
   <p></break><img src=gnomed6.jpeg width="600px"<break>
-       THis gnome is hard</p> 
+       </p> 
 </div>
 
 <div id="Tokyo" class="tabcontent">
-  <h3>Gnome3</h3>
+  <h2><center>He Will Find You</center></h3>
   <p><img src=gnomed5.jpg width="600px"</p>
 </div>
 
@@ -138,10 +140,82 @@ function openCity(evt, cityName) {
 </body>
 </html> 
 
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 1080px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="AboutUsPage">About</a>
+  <a href="ServicesPage">Services</a>
+  <a href="Clients">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer;position:absolute; absolute;top: 35" a onclick="openNav()">&#9776; Directory</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 
+
     
-<center><p class="solid"><img src=gnome.jpg width="600px" alt="gnome"><center> <center>A Rare German Garden Gnome</center><break> </p>
-    
-<center><img src=gnomed2.jpg width="500px" alt="gnome"><center> 
+
     
         <h1> Youve been Gnomed</h1>
     
